@@ -1,0 +1,185 @@
+@font-face{
+  font-family: technology;
+  src: url(/Users/chrissyforster/Library/Fonts/technology.bold-italic.ttf);
+}
+#bgI {
+  background: url(desk-s.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+} 
+.button {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	margin: 15px 15px auto ;
+}
+
+.button .outer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background: rgb(205, 226, 224);
+	border-radius: 14px;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	box-shadow: inset rgba(0,0,0,0.85) 0px 1px 5px;
+	-webkit-box-shadow: inset rgba(0,0,0,0.85) 0px 1px 5px;
+	-moz-box-shadow: inset rgba(0,0,0,0.85) 0px 1px 5px;
+	-webkit-transform: perspective(500px) rotateX(35deg);
+	-moz-transform: perspective(500px) rotateX(35deg);
+}
+.button .outer .height {
+	position: relative;
+	height: 100%;
+	margin-top: -12px;
+	padding-bottom: 13px;
+	background:rgba(121, 117, 117, 0.85);
+	/*background: #39a02d;*/
+	border-radius: 16px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: rgba(241, 234, 128, 0.85) 0px 1px 1px, inset rgba(241, 234, 128, 0.85) 0px -2px 8px;
+	
+}       
+.button:hover .outer .height {
+	margin-top: -10px;
+	padding-bottom: 10px;
+	
+	background: rgba(241, 234, 128, 0.85);
+	box-shadow: rgba(0,0,0,0.25) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 6px;
+	-webkit-box-shadow: rgba(0,0,0,0.25) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 6px;
+	-moz-box-shadow: rgba( 0,0,0,0.25) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 6px;
+}
+.button:active .outer .height {
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+.button .outer .height .inner {
+	line-height: 1.5em;
+	font-size: 32px;
+	letter-spacing: .05em;
+	position: relative;
+	height: 105%;
+	text-align: center ;
+	
+	background: #2c4e44;
+	border-radius: 10px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	
+}
+.button:hover .outer .height .inner {
+	
+	background: rgba(189, 177, 10, 0.85)
+}
+.button:active .outer .height .inner{
+	text-shadow: #9e3d89 0px 1px 0px;
+	/*text-shadow: #319926 0px 1px 0px;*/
+	border-radius: 10px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 10px;
+	box-shadow: inset rgba(0,0,0,0.9) 0px 0px 8px;
+	-webkit-box-shadow: inset rgba(0,0,0,0.9) 0px 0px 8px;
+	-moz-box-shadow: inset rgba(0,0,0,0.9) 0px 0px 8px;
+	background: #545853; /* Old browsers */
+}
+
+#keys{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    border-radius: 10px;
+    background-color: silver;
+    margin-left: 20px auto;
+    padding-right: 61px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  
+}
+#screen{
+    font-family: technology;
+    font-size: 45px;
+    width: 90%;
+    height: 60px;
+    background-color: rgb(122, 192, 186);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px auto auto 10px;
+    border-radius: 5px 0 0 5px;
+}
+#scBorder{
+    width: 331px;
+    border: 3px solid black;
+	background-color: rgb(205, 226, 224);
+    border-radius: 5px;
+    margin: 15px;
+    display:flex;
+    flex-direction: row;
+    
+}
+#scIn{
+    width:25px;
+    height: 60px;
+	font-family: technology;
+	font-size: 50px;
+    background-color: rgb(122, 192, 186);
+	display: flex;
+    align-items: center; 
+	justify-content: first baseline;
+    border-radius: 0 5px 5px 0;
+    margin: 20px auto;
+    margin-right: 10px;
+}
+.column{
+    margin: 3px;  
+    padding-bottom: 30px;
+}
+#calc{
+    width: 370px;
+	  margin-top: 110px;
+    background-color: rgb(122, 192, 186);
+    background: linear-gradient(left ,#3f3d3d 50%, #063d3d 100%) ;
+    border: 6px solid rgb(58, 59, 51);
+    border-radius: 20px;
+    box-shadow: 5px 10px  rgb(0, 0, 0) ;
+    padding-left: 5px; 
+    
+}
+
+footer{
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  
+}	
+
+
+.inner{
+  color: rgb(243, 243, 243);
+
+}
+  .message{
+  position: relative;
+  right: 470px;
+  bottom: 190px;
+  word-wrap: break-word;
+  width: 100px;
+}
